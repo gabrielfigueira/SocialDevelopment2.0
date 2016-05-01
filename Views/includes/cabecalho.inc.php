@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo HOME_URL; ?>Views/layout/css/style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
     <style type="text/css">
-      .teste{
+      .img{
         height: 150px;
         width: 150px;
         padding: 10px;
@@ -33,8 +33,7 @@
           <div class="top-bar-left">
               <ul class="menu">
                   <li class="menu-text"><a href="<?php echo HOME_URL . 'home' ?>">Social</a></li>
-                  <li><a href="<?php echo HOME_URL . 'timeline' ?>"> Linha do Tempo</a></li>            
-                  <li><a href="<?php echo HOME_URL . 'timeline/novo_post' ?>"> Novo Post</a></li>
+                  <li><a href="<?php echo HOME_URL . 'timeline' ?>"> Linha do Tempo</a></li>
               </ul>   
           </div>
           <div class="top-bar-right">
@@ -44,8 +43,11 @@
                       <ul class="menu vertical">
                       <?php $user = $_SESSION['usuario']['id'] ?>
                    <input type="hidden" value="<?php echo $user?>">
-
-                      <a style="color: black;" href="<?php echo HOME_URL . "user/form?id=$user" ?>"> <img class="teste" src="public/<?php echo $_SESSION['usuario']['foto_perfil'] ?>"></a>
+                    <?php if ($_SESSION['usuario']['foto_perfil'] == '') { ?>
+                      <a style="color: black;" href="<?php echo HOME_URL . "user/form?id=$user" ?>"> <img class="img" src="/SocialDevelopment/Views/layout/imgs/user_sem_foto.jpg"></a>
+                       <?php } else { ?>
+                      <a style="color: black;" href="<?php echo HOME_URL . "user/form?id=$user" ?>"> <img class="img" src="public/<?php echo $_SESSION['usuario']['foto_perfil'] ?>"></a>
+                       <?php } ?>
                                                                 
                           <li><a href="#"><i class="fi-torso"> --<?php echo $_SESSION['usuario']['nome'] ?></i></a></li>                          
                           <li><a href="<?php echo HOME_URL . 'user/logout' ?>"><i class="fi-power">Sair</i></a></li>           

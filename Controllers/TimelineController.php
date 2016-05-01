@@ -36,10 +36,6 @@ class TimelineController extends AplicacaoController {
         require_once ABSPATH . 'Views/timeline/index.php';         
     }
 
-    public function novo_post(){        
-        
-        require_once ABSPATH . 'Views/timeline/form_post.php'; 
-    }
 
       public function postar() {
         $foto = $_FILES["foto_post"];
@@ -70,7 +66,7 @@ class TimelineController extends AplicacaoController {
       
         // Salvar registro no banco
         $this->timeline_model->inserir( $post );    
-        require_once ABSPATH . 'Views/timeline/form_post.php'; 
+        header( 'Location: ' . HOME_URL . 'timeline' );  
       
 
     }

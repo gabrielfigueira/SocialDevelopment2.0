@@ -1,5 +1,3 @@
-<?php require_once ABSPATH . 'Views/includes/cabecalho.inc.php'; ?>
-
 <form action="<?php echo HOME_URL . 'timeline/postar' ?>" class="form-horizontal" method="post" enctype="multipart/form-data">
 <div class="formpost">
   <h1>Faça sua postagem</h1>   
@@ -15,4 +13,3 @@
         <button type="submit" class="button column row">Postar</button>        
     </form>
   </div>
- <?php require_once ABSPATH . 'Views/includes/rodape.inc.php'; ?>

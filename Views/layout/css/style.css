@@ -1,3 +1,6 @@
+body {
+   background-image: url('/SocialDevelopment/Views/layout/imgs/background.jpg');  
+}
 .timeline {  
     background-color: #e6e6e6;
     border-radius: 10px;
@@ -5,8 +8,12 @@
     margin-left: 310px;
     margin-top: 20px;
     }
-body {
-   background-image: url('/SocialDevelopment/Views/layout/imgs/background.jpg');  
+.timeline_comentarios
+{
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    text-align: left;
+
 }
 .form {
     width: 400px;
@@ -19,28 +26,18 @@ body {
     display: block;
     padding: 15px;
 }
-.formpost {
-    width: 700px;
-    height: 350px;
-    background-color: #e6e6e6;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 350px;
-    margin-top: 100px;
-    display: block;
-    padding: 15px;
-}
 
 .formpost {
-    width: 700px;
-    height: 470px;
+    margin-left: 310px;
+    width: 790px;  
     background-color: #e6e6e6;
     border-radius: 10px;
-    text-align: center;
-    margin-left: 350px;
-    margin-top: 50px;
-    display: block;
-    padding: 15px;
+    text-align: center;   
+    margin-top: 50px; 
+}
+.formpost input{
+    width: 770px;
+    margin-left: 10px;
 }
 
 .main {

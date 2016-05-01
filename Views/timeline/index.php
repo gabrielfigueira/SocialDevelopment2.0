@@ -1,4 +1,5 @@
 <?php require_once ABSPATH . 'Views/includes/cabecalho.inc.php'; ?>
+<?php include ABSPATH . 'Views/timeline/form_post.php' ?>
 <?php //if ($posts->num_rows > 0) : ?>
     <?php 
         foreach ($posts as $key => $item):
@@ -36,7 +37,8 @@
 
 <script type="text/javascript">
     function comentar(e) {
-        $(e).closest('.callout').children('.comentario').show();     
+        $(e).closest('.callout').children('.comentario').show(); 
+ 
     }
 </script>
 

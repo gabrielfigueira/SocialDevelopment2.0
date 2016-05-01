@@ -39,11 +39,11 @@ class UserController extends Controller {
         $foto = $_FILES["foto_perfil"];
         $user = (object) $_POST;
           
-        if ((!preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"])) && ($foto["name"] != "")) {
-            $user->foto_perfil = '/SocialDevelopment/Views/layout/imgs/user_sem_foto.jpg';
+        if ((!preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"])) && ($foto["name"] == "")) {
+            $user->foto_perfil = '';
             $this->user_model->salvar( $user );
             header( 'Location: ' . HOME_URL . 'home' ); 
-        }
+        }  else {
                   // Pega extensão da imagem
             preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"], $ext);
 
@@ -61,7 +61,8 @@ class UserController extends Controller {
              
             // Salvar registro no banco
             $this->user_model->salvar( $user );
-            header( 'Location: ' . HOME_URL . 'home' );        
+            header( 'Location: ' . HOME_URL . 'home' ); 
+            }     
       
     
     }

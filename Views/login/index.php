@@ -1,8 +1,5 @@
 <?php require_once ABSPATH . 'Views/includes/cabecalho.inc.php'; ?>
 
-<?php if ( isset( $mensagem ) ) : ?>
-    <div class="alert alert-danger"><?php echo $mensagem ?></div>
-<?php endif; ?>
 <div class="form">
           <br>
           <h1>Login</h1>

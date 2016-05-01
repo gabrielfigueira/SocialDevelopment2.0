@@ -1,6 +1,6 @@
 <?php require_once ABSPATH . 'Views/includes/cabecalho.inc.php'; ?>
  <div class="form">
- <h1>Cadastrar</h1>
+ <h3>Cadastrar</h3>
  
 <form action="<?php echo HOME_URL . 'user/cadastrar' ?>" class="form-horizontal" method="post">
 <div class="input-wrapper">
@@ -19,6 +19,7 @@
     </label>    
   </div> 
   <button type="submit" class="button column row">Cadastrar</button>
+   <small><a style="color: black;" href="<?php echo HOME_URL . 'user' ?>">Voltar</a></small>
 </form>
 
  <?php require_once ABSPATH . 'Views/includes/rodape.inc.php'; ?>
