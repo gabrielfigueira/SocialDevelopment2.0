@@ -1,0 +1,94 @@
+.timeline {  
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 310px;
+    margin-top: 20px;
+    }
+body {
+   background-image: url('/SocialDevelopment/Views/layout/imgs/background.jpg');  
+}
+.form {
+    width: 400px;
+    height: 400px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 100px;
+    display: block;
+    padding: 15px;
+}
+.formpost {
+    width: 700px;
+    height: 350px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 100px;
+    display: block;
+    padding: 15px;
+}
+
+.formpost {
+    width: 700px;
+    height: 470px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 50px;
+    display: block;
+    padding: 15px;
+}
+
+.main {
+    background: #E7E3DA;
+    position: relative;
+    top: 600px;
+    font-family: 'Raleway', sans-serif;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1080px;
+    height: 720px;
+    margin-top:78px;
+    margin-left:100px;
+    background-color: black;
+}
+
+.conteudo{
+    display: flex;
+    position: relative;
+    margin-top:100px;
+    margin-left: 0px;  
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo p{
+    display: inline;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px,2px,4px;
+    color: red;
+    font-family: 'Abril Fatface', cursive;
+}
+.fundo{    
+    background-color: black;
+    width: 1352px;
+    height: 720px;
+}
+
+.teste{
+height: 70px;
+width: 70px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+} 
